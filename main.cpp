@@ -2,7 +2,7 @@
 int SIZE = 100;
 using namespace std;
 
-int fallable_function() {
+int fallible_function() {
    char message[] = "This is a helpfull message\n";
    char response[SIZE];
 
@@ -53,7 +53,7 @@ int fallable_function() {
 int main() {
    while(1) {
       try {
-         return fallable_function();
+         return fallible_function();
       }
       catch(BaseErrorType &e) {
          e.msg();
