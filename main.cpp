@@ -22,7 +22,7 @@ int fallable_function() {
       cin >> severity;
       cin.ignore(100, '\n');
 
-      SpecialError exception(42, message);
+      SpecialError exception(severity, message);
       throw exception;
    }
 
